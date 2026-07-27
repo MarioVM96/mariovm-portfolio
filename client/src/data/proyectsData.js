@@ -1,26 +1,38 @@
-export const projects = [
+export const projectsData = [
   {
     id: 1,
-    title: "Pokedex",
-    description: "Aplicación que permite a usuarios explorar, buscar y gestionar pokémon. Los usuarios pueden crear equipos de hasta 6 miembros, marcar favoritos y compartir su información de forma segura.",
-    tags: ["JavaScript", "Node.js", "Express.js", "Sequelize ORM", "PostgreSQL", "Supabase Auth"],
-    repositorio: ["https://gitlab.com/mariovalero/pokedex-backend/-/tree/main", "https://gitlab.com/MarioVM96/pokedex-frontend"],
-    deploy: "" // Opcional
+    title: 'Pokédex Fullstack',
+    description: 'Aplicación fullstack donde usuarios exploran pokémon, crean equipos y marcan favoritos con autenticación JWT.',
+    technologies: ['Node.js', 'React', 'PostgreSQL', 'JWT'],
+    github: 'https://github.com/MarioVM96/pokedex-backend',
+    link: 'https://pokedex-app.vercel.app',
+    icon: '⚡'
   },
   {
     id: 2,
-    title: "Portafolio Profesional",
-    description: "Mi sitio web personal diseñado para mostrar mis habilidades como desarrollador y mi galería de proyectos de software.",
-    tags: ["React", "Vite", "Tailwind CSS", "Javascript"],
-    github: "https://github.com/MarioVM96/mariovm-portfolio",
-    deploy: ""
+    title: 'Dulces Orientales Ecommerce',
+    description: 'Ecommerce fullstack de venta de dulces con carrito, checkout y sistema de pedidos integrado.',
+    technologies: ['Java', 'Spring Boot', 'React', 'MySQL'],
+    github: 'https://github.com',
+    link: '#',
+    icon: '🛍️'
   },
   {
     id: 3,
-    title: "KOFit",
-    description: "Sitio de ventas sobre equipo para boxeadores",
-    tags: ["Nodejs", "Bootstrap", "HTML", "CSS"],
-    github: "https://github.com/MarioVM96/mariovm-portfolio",
-    deploy: ""
+    title: 'Página de Piñatas',
+    description: 'Sitio web para negocio de piñatas con catálogo, cotizador y integración con WhatsApp.',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
+    github: 'https://github.com',
+    link: '#',
+    icon: '🎉'
+  },
+  {
+    id: 4,
+    title: 'Sistema de Tareas',
+    description: 'Aplicación CRUD fullstack para gestión de tareas con autenticación y base de datos.',
+    technologies: ['Java', 'MySQL', 'HTML/CSS', 'JavaScript'],
+    github: 'https://github.com',
+    link: '#',
+    icon: '✓'
   }
-];
+]
