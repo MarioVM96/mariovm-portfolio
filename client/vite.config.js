@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // 2. Agregas el plugin aquí
   ],
+  base: '/mariovm-portfolio/', 
 })
