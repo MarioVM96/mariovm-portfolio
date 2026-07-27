@@ -1,45 +1,64 @@
-import { useState } from 'react'
+import React, { useState } from 'react';
 
-export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false)
+function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-        <nav className="fixed top-0 w-full bg-black/80 backdrop-blur-md z-50 border-b border-gray-800">
-            <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  return (
+    <nav className="sticky top-0 z-50 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-900">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          
+          <div className="flex-shrink-0">
+            <a href="#" className="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              MarioVM
+            </a>
+          </div>
 
-                {/* Logo */}
-                <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                    MarioVM
-                </div>
-
-                {/* Desktop Menu */}
-                <div className="hidden md:flex gap-8">
-                    <a href="#inicio" className="hover:text-blue-400 transition">Inicio</a>
-                    <a href="#about" className="hover:text-blue-400 transition">Acerca de</a>
-                    <a href="#proyectos" className="hover:text-blue-400 transition">Proyectos</a>
-                    <a href="#skills" className="hover:text-blue-400 transition">Skills</a>
-                    <a href="#contacto" className="hover:text-blue-400 transition">Contacto</a>
-                </div>
-
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-2xl"
-                    onClick={() => setIsOpen(!isOpen)}
-                >
-                    ☰
-                </button>
-
-                {/* Mobile Menu */}
-                {isOpen && (
-                    <div className="flex flex-col gap-4 p-4">
-                        <a href="#inicio" className="hover:text-blue-400">Inicio</a>
-                        <a href="#about" className="hover:text-blue-400">Acerca de</a>
-                        <a href="#proyectos" className="hover:text-blue-400">Proyectos</a>
-                        <a href="#skills" className="hover:text-blue-400">Skills</a>
-                        <a href="#contacto" className="hover:text-blue-400">Contacto</a>
-                    </div>
-                )}
+          <div className="hidden md:block">
+            <div className="ml-10 flex items-center gap-8">
+              <a href="#" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Inicio</a>
+              <a href="#about" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Acerca de</a>
+              <a href="#projects" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Proyectos</a>
+              <a href="#skills" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Skills</a>
+              <a href="#contact" className="text-sm font-medium text-slate-300 hover:text-white transition-colors">Contacto</a>
             </div>
-        </nav>
-    )
+          </div>
+
+          <div className="flex md:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              type="button"
+              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-900 transition-colors focus:outline-none"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <span className="sr-only">Abrir menú</span>
+              {!isOpen ? (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+              ) : (
+                <svg className="block h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <div className={`${isOpen ? 'block' : 'hidden'} md:hidden bg-slate-950 border-b border-slate-900`} id="mobile-menu">
+        <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3 flex flex-col gap-2">
+          <a href="#" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 px-3 py-2 rounded-lg transition-colors">Inicio</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 px-3 py-2 rounded-lg transition-colors">Acerca de</a>
+          <a href="#projects" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 px-3 py-2 rounded-lg transition-colors">Proyectos</a>
+          <a href="#skills" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 px-3 py-2 rounded-lg transition-colors">Skills</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 px-3 py-2 rounded-lg transition-colors">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  );
 }
+
+export default Navbar;

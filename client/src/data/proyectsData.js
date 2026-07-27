@@ -1,38 +1,23 @@
+import imgBox from "../assets/images/KOFit.png"
+import imgPke from "../assets/images/Pokedex.png"
+
 export const projectsData = [
   {
     id: 1,
-    title: 'Pokédex Fullstack',
-    description: 'Aplicación fullstack donde usuarios exploran pokémon, crean equipos y marcan favoritos con autenticación JWT.',
-    technologies: ['Node.js', 'React', 'PostgreSQL', 'JWT'],
-    github: 'https://github.com/MarioVM96/pokedex-backend',
-    link: 'https://pokedex-app.vercel.app',
-    icon: '⚡'
+    title: "Pokédex Fullstack",
+    description: "Aplicación fullstack donde los usuarios exploran pokémon, crean equipos y marcan favoritos con autenticación robusta mediante JWT.",
+    tags: ["Node.js", "React", "PostgreSQL", "JWT"],
+    github: "https://github.com/MarioVM96/Pokedex/tree/main",
+    demo: "#",
+    image: imgPke
   },
   {
     id: 2,
-    title: 'Dulces Orientales Ecommerce',
-    description: 'Ecommerce fullstack de venta de dulces con carrito, checkout y sistema de pedidos integrado.',
-    technologies: ['Java', 'Spring Boot', 'React', 'MySQL'],
-    github: 'https://github.com',
-    link: '#',
-    icon: '🛍️'
-  },
-  {
-    id: 3,
-    title: 'Página de Piñatas',
-    description: 'Sitio web para negocio de piñatas con catálogo, cotizador y integración con WhatsApp.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Tailwind'],
-    github: 'https://github.com',
-    link: '#',
-    icon: '🎉'
-  },
-  {
-    id: 4,
-    title: 'Sistema de Tareas',
-    description: 'Aplicación CRUD fullstack para gestión de tareas con autenticación y base de datos.',
-    technologies: ['Java', 'MySQL', 'HTML/CSS', 'JavaScript'],
-    github: 'https://github.com',
-    link: '#',
-    icon: '✓'
+    title: "Landingpage KOFit",
+    description: "Landing page de equipo deportivo de boxeo para un Hackaton. Me encargué del diseño de la sección y de implementar la lógica de negocio para la gestión de productos y el carrito de compras.",
+    tags: ["JavaScript", "Bootstrap", "HTML"],
+    github: "https://github.com/DIEGOELIASLOPEZ/Hakathon-KOFit",
+    demo: "https://kofit.netlify.app/",
+    image: imgBox
   }
-]
+];
