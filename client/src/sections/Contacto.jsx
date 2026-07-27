@@ -15,20 +15,20 @@ export default function Contacto() {
 
         <div className="flex gap-6 justify-center flex-wrap mb-12">
           <a 
-            href="mailto:mario@example.com"
+            href="mailto:mario102296@gmail.com"
             className="px-8 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg font-bold transition"
           >
             Enviar Email
           </a>
           <a 
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/mavm9610/"
             target="_blank"
             className="px-8 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500/10 rounded-lg font-bold transition"
           >
             LinkedIn
           </a>
           <a 
-            href="https://github.com"
+            href="https://github.com/MarioVM96"
             target="_blank"
             className="px-8 py-3 border border-blue-500 text-blue-400 hover:bg-blue-500/10 rounded-lg font-bold transition"
           >
@@ -36,9 +36,9 @@ export default function Contacto() {
           </a>
         </div>
 
-        <p className="text-gray-500 text-sm">
+        {/* <p className="text-gray-500 text-sm">
           O sígueme en redes sociales para más contenido de desarrollo.
-        </p>
+        </p> */}
       </div>
     </section>
   )
