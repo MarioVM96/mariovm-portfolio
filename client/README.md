@@ -1,16 +1,56 @@
-# React + Vite
+# Mi Portafolio Profesional - Mario Valero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenidos a mi portafolio web personal. Este sitio está diseñado para mostrar mi trayectoria, habilidades técnicas y la galería de proyectos de software que he desarrollado como ingeniero de software.
 
-Currently, two official plugins are available:
+**Link del proyecto en vivo:** https://mariovm96.github.io/mariovm-portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Tecnologías y Herramientas Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El sitio web está construido bajo una arquitectura modular y moderna utilizando el ecosistema de JavaScript:
 
-## Expanding the ESLint configuration
+* **Frontend:** React 19 (Hooks, Context) + Vite (Bundler ultra rápido)
+* **Estilos:** Tailwind CSS (Diseño responsivo, animaciones nativas)
+* **Iconos y Animaciones:** Iconify (Logos tecnológicos vectoriales) + Headroom.js (Navbar dinámico)
+* **Despliegue:** GitHub Pages (Automatizado con scripts de `gh-pages`)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌌 Características Principales
+
+* **Diseño 100% Responsivo:** Adaptado perfectamente para una lectura óptima en dispositivos móviles, tablets y computadoras de escritorio.
+* **Skills en Movimiento:** Carrusel horizontal infinito que muestra de forma dinámica mi stack tecnológico a color.
+* **Efectos Visuales Premium:** Fondos oscuros con iluminación trasera difuminada (*Glow effects*) y micro-interacciones físicas al pasar el cursor sobre las tarjetas.
+* **Sección Acerca de Mí:** Estructura asimétrica tipo *Bento Grid* que resume de forma ejecutiva mis hitos de experiencia laboral y bootcamp.
+* **Galería de Proyectos Dinámica:** Tarjetas con maquetas (*mockups*) integradas que escalan de forma responsiva sin recortar la visualización de la interfaz.
+
+---
+
+## Arquitectura del Proyecto
+
+El repositorio está organizado dividiendo el entorno del cliente de forma independiente para permitir escalabilidad a futuro (Front/Back):
+
+```text
+mariovm-portfolio/ (Raíz del Proyecto)
+├── client/            # Entorno del Frontend (React + Vite)
+│   ├── public/        # Recursos estáticos globales
+│   └── src/
+│       ├── assets/    # Capturas de pantalla e imágenes locales
+│       ├── components/# Piezas de código reutilizables (Navbar, Cards)
+│       ├── data/      # Archivos de datos simulados en JavaScript
+│       ├── sections/  # Bloques principales de la página (Hero, About, Projects)
+│       ├── App.jsx    # Punto de ensamble de las secciones
+│       └── main.jsx   # Inicializador de la aplicación
+├── .gitignore         # Protección de node_modules a nivel global
+└── README.md          # Documentación general del repositorio
+```
+
+---
+
+## Contacto
+
+¿Te interesa mi perfil técnico para alguna vacante o colaboración de software? ¡Hablemos!
+
+* **LinkedIn:** https://www.linkedin.com/in/mavm9610/
+* **GitHub:** https://github.com/MarioVM96
